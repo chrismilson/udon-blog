@@ -80,16 +80,16 @@ div {
   width: 100%;
 }
 
-.header img {
-  position: relative;
-  height: 10rem;
-  float: right;
-}
-
 .footer {
   text-align: center;
   margin: auto;
   width: 100%;
+}
+
+#mascot {
+  position: relative;
+  height: 10rem;
+  float: right;
 }
 
 #content-main {
