@@ -22,8 +22,4 @@ Create an interpreter for text files that will be formatted in such a way that I
   - [ ] Learn JavaScript.
 - [x] Eat some udon.
 - [ ] Eat more udon.
-<<<<<<< HEAD
 - [ ] 日本語のサイトも作ること。
-=======
-- [ ] 日本語のサイトもつくる。
->>>>>>> 2331a3be005bad9fe5d99919d26965e70308f1ca
