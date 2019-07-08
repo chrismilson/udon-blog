@@ -82,7 +82,7 @@ div {
 
 .header img {
   position: relative;
-  max-height: 10rem;
+  height: 10rem;
   float: right;
 }
 
