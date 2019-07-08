@@ -2,7 +2,7 @@ var renderPost = (post) => {
   return `
     <div class="container post">
       <div class="title">
-        <h3>${ post['title'] }<h3>
+        <h2>${ post['title'] }</h2>
       </div>
       <div class="body">
         ${
