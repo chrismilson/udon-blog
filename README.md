@@ -22,3 +22,4 @@ Create an interpreter for text files that will be formatted in such a way that I
   - [ ] Learn JavaScript.
 - [x] Eat some udon.
 - [ ] Eat more udon.
+- [ ] 日本語のサイトも作ること。
