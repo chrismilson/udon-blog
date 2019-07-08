@@ -16,5 +16,8 @@ Create an interpreter for text files that will be formatted in such a way that I
 
 - [ ] Write some posts.
 - [ ] Make the skeleton for the website.
+  - [ ] Learn HTML.
+  - [ ] Learn CSS.
+  - [ ] Learn JavaScript.
 - [x] Eat some udon.
 - [ ] Eat more udon.
