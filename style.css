@@ -1,0 +1,94 @@
+:root {
+  --color-0: #FEFEFE;
+  --color-1: darkgrey;
+  --color-2: #222222;
+  --color-3: #777777;
+  --color-4: #AAAAAA;
+  --color-5: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  color: var(--color-3);
+}
+
+body {
+  background-color: var(--color-0);
+  font-size: 1rem;
+}
+
+div {
+  margin: auto;
+}
+
+.nav {
+  background-color: var(--color-1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav ul {
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  border: 0.1rem solid var(--color-1);
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.nav a:hover {
+  border-color: var(--color-3);
+}
+
+.nav a.active {
+  border-color: var(--color-5);
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+  overflow: auto;
+}
+
+.title {
+  color: var(--color-2);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+.subtitle {
+  color: var(--color-3);
+}
+
+.content {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  background-color: var(--color-1);
+  padding: 2rem;
+  text-align: right;
+}
+
+#content-main {
+  background-color: var(--color-1);
+  box-sizing: border-box;
+  float: left;
+  margin-top: 1rem;
+}
+
+#sidebar-main {
+  float: right;
+  margin-top: 1rem;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
