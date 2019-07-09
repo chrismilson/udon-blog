@@ -1,12 +1,27 @@
 :root {
+  /* Main colours */
   --bgcolor-1: #1D8A8F;
   --bgcolor-2: #5DB5B9;
   --bgcolor-3: #35969A;
   --bgcolor-4: #0A7479;
   --bgcolor-5: #015C60;
 
-  --color-1: #000000;
-  --color-2: var(--bgcolor-5);
+  /* Complementary colours */
+  --cpcolor-1: #F2801D;
+  --cpcolor-2: #FFB474;
+  --cpcolor-3: #FE9E4B;
+  --cpcolor-4: #C55F07;
+  --cpcolor-5: #9C4800;
 
-  --nav-width: 10rem;
+  /* Dark text colours */
+  --color-1: #000000;
+  --color-2: #001014;
+  --color-3: #00292D;
+  --color-4: #004347;
+
+  /* Light text colours */
+  --color-1-light: #E6FFFF;
+  --color-2-light: #CDFFFF;
+  --color-3-light: #B4FFFF;
+  --color-4-light: #9AF5F9;
 }
