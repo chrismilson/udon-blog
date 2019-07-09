@@ -1,27 +1,27 @@
 :root {
   /* Main colours */
-  --bgcolor-1: #1D8A8F;
-  --bgcolor-2: #5DB5B9;
-  --bgcolor-3: #35969A;
-  --bgcolor-4: #0A7479;
-  --bgcolor-5: #015C60;
+  --bgcolor-1: #1D8A8FFF;
+  --bgcolor-2: #5DB5B9FF;
+  --bgcolor-3: #35969AFF;
+  --bgcolor-4: #0A7479FF;
+  --bgcolor-5: #015C60FF;
 
   /* Complementary colours */
-  --cpcolor-1: #F2801D;
-  --cpcolor-2: #FFB474;
-  --cpcolor-3: #FE9E4B;
-  --cpcolor-4: #C55F07;
-  --cpcolor-5: #9C4800;
+  --cpcolor-1: #F2801DFF;
+  --cpcolor-2: #FFB474FF;
+  --cpcolor-3: #FE9E4BFF;
+  --cpcolor-4: #C55F07FF;
+  --cpcolor-5: #9C4800FF;
 
   /* Dark text colours */
-  --color-1: #000000;
-  --color-2: #001014;
-  --color-3: #00292D;
-  --color-4: #004347;
+  --color-1: #000000FF;
+  --color-2: #001014FF;
+  --color-3: #00292DFF;
+  --color-4: #004347FF;
 
   /* Light text colours */
-  --color-1-light: #E6FFFF;
-  --color-2-light: #CDFFFF;
-  --color-3-light: #B4FFFF;
-  --color-4-light: #9AF5F9;
+  --color-1-light: #E6FFFFFF;
+  --color-2-light: #CDFFFFFF;
+  --color-3-light: #B4FFFFFF;
+  --color-4-light: #9AF5F9FF;
 }
