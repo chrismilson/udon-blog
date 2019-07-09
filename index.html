@@ -4,6 +4,7 @@
     <title>Udon Blog</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- Fonts -->
@@ -12,7 +13,18 @@
   <body>
     <div class="container">
         <div class="container header">
-          <img id="mascot" src="images/icon.svg">
+          <object id="mascot" data="images/icon.svg" type="image/svg+xml" style="
+            path {
+              fill-opacity: 0;
+            }
+            path, ellipse, line {
+              stroke: black;
+            }
+            #bowl {
+              fill: var(--color-2); fill-opacity: 1;
+            }
+          ">
+          </object>
           <h1 class="title">Sanuki Udon</h1>
           <h4 class="title subtitle">by <a class="my-name" href="https://shlappas.com">Chris Milson</a></h4>
         </div>

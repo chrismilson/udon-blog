@@ -1,25 +1,14 @@
-:root {
-  --color-0: #FEFEFE;
-  --color-1: darkgrey;
-  --color-2: #222222;
-  --color-3: #777777;
-  --color-4: #AAAAAA;
-  --color-5: #000000;
-
-  --nav-width: 10rem;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 a:active {
-  color: var(--color-3);
+  color: var(--color-5);
 }
 
 body {
-  background-color: var(--color-0);
+  background-color: var(--bgcolor-1);
   font-size: 1rem;
 }
 
@@ -39,15 +28,15 @@ div {
 }
 
 .footer {
-  background-color: var(--color-1);
-  padding: 1em 0;
+  background-color: var(--bgcolor-2);
+  padding: 1em;
   margin-top: 1rem;
   text-align: center;
   width: 100%;
 }
 
 .header {
-  background-color: var(--color-1);
+  background-color: var(--bgcolor-2);
   box-sizing: border-box;
   padding: 2rem;
   text-align: right;
@@ -55,7 +44,7 @@ div {
 }
 
 .nav {
-  background-color: var(--color-1);
+  background-color: var(--bgcolor-2);
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -68,17 +57,16 @@ div {
 }
 
 .nav a {
-  border: 0.1rem solid var(--color-1);
   display: block;
   padding: 0.5rem 1rem;
 }
 
-.nav a:hover {
-  border-color: var(--color-3);
+.nav a.active {
+  background-color: var(--bgcolor-4);
 }
 
-.nav a.active {
-  border-color: var(--color-5);
+.nav a:hover {
+  background-color: var(--bgcolor-3);
 }
 
 .post {
@@ -98,9 +86,9 @@ div {
 }
 
 #mascot {
-  position: relative;
-  height: 10rem;
   float: right;
+  height: 10rem;
+  position: relative;
 }
 
 #content-main {

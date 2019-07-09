@@ -1,0 +1,12 @@
+:root {
+  --bgcolor-1: #1D8A8F;
+  --bgcolor-2: #5DB5B9;
+  --bgcolor-3: #35969A;
+  --bgcolor-4: #0A7479;
+  --bgcolor-5: #015C60;
+
+  --color-1: #000000;
+  --color-2: var(--bgcolor-5);
+
+  --nav-width: 10rem;
+}
