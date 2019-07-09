@@ -75,10 +75,16 @@ div {
   background-color: var(--bgcolor-3);
 }
 
+.no-svg .logo {
+  height: 10rem;
+  background-image: url(images/icon/icon.png);
+  background-repeat: no-repeat;
+}
+
 .post {
   background: var(--bgcolor-2);
   margin-right: 1rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .title {
