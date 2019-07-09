@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://shlappas.com/udon-blog/">
-    <img src="images/icon/icon.png" width="200" height="200">
+    <img src="images/icon/icon-black.png" width="200" height="200">
   </a>
 </p>
 
