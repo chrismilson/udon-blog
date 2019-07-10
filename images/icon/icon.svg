@@ -4,22 +4,18 @@ viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w
  <g>
   <title>Layer 2</title>
   <style>
-    :root {
-      --col: var(--color-4);
-    }
-
     path {
       fill-opacity: 0;
     }
 
     path, ellipse, line {
-      stroke: var(--col);
+      stroke: var(--mascot-color);
       stroke-width: 14;
       stroke-linecap: round;
     }
 
     #bowl {
-      fill: var(--col);
+      fill: var(--mascot-color);
       fill-opacity: 1;
       stroke-width: 0;
     }
