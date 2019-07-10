@@ -26,8 +26,16 @@ div {
   overflow: auto;
 }
 
-.content {
+.en .content {
   font-family: 'Open Sans', sans-serif;
+}
+
+.en .title {
+  font-family: 'Roboto', sans-serif;
+}
+
+.ja .title, .ja .content {
+  font-family: ;
 }
 
 .footer {
@@ -84,10 +92,6 @@ div {
   background: var(--bgcolor-2);
   margin-right: 1rem;
   padding: 0 1rem;
-}
-
-.title {
-  font-family: 'Roboto', sans-serif;
 }
 
 #mascot {
