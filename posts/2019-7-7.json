@@ -1,0 +1,23 @@
+{
+  date: '2019-7-7',
+  google-maps-link: 'https://goo.gl/maps/ZkF2zjxoUiTR1Qo38',
+  en: {
+    title: 'Yoshiya Purely Delicious',
+    body: [
+      'I went to \"Yoshiya Purely Hand Cut Udon\" on Sunday. I ordered the "Large bukkake udon with par-boiled egg" and Chicken Tempura.',
+      'As usual both chopped spring onion and fresh minced ginger were available to put on the udon after I recieved my order at the counter. It would have been nice to have them available where I was eating so that I could top up as I ate instead of stocking up at the beginning.',
+      'As usual both chopped spring onion and fresh minced ginger were available to put on the udon after I recieved my order at the counter. It would have been nice to have them available where I was eating so that I could top up as I ate instead of stocking up at the beginning.'.
+      'The chicken went very well with the Udon. I dipped the chicken in the soup and the mixture of runny yolk and salty broth was very nice'
+    ],
+  },
+  ja: {
+    title: 'よしや　手打ちうどん',
+    body: [
+      'もう週末なので給食を食べません。家の近く「よしや」って言ううどん屋に食べに行きました',
+      '「冷たい温玉ぶっかけの大」頼んで、とり天取って、カウンターで食べました。',
+      '美味しかったです。麺の硬さが完璧だったと思います。本当に手打ちなので大きさはバラバラだけど、それがいいところだと思います',
+      '悪いことは特にないですが、ねぎとしょうがはレジでしかなかったから、ちょっと困りました。最初にいっぱい載せないといけませんでした。',
+      'ごちそうさまでした！'
+    ]
+  },
+}
