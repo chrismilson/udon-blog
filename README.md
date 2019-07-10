@@ -14,14 +14,14 @@ This is also my first foray into project pages (as part of [Github Pages](https:
 
 Create an interpreter for text files that will be formatted in such a way that I can easily create new blog posts and automatically add them to the project page.
 
-- [ ] Write some posts.
-  - [x] Write the first post.
-- [ ] Make the skeleton for the website.
-  - [ ] Learn HTML.
-  - [ ] Learn CSS.
+- [ ] Write some posts
+  - [x] Write the first post
+- [ ] Make the skeleton for the website
+  - [ ] Learn HTML
+  - [ ] Learn CSS
     - [x] Do the [W3Schools' CSS tutorial](https://www.w3schools.com/css/)
-  - [ ] Learn JavaScript.
+  - [ ] Learn JavaScript
     - [x] Do the [W3Schools' JS tutorial](https://www.w3schools.com/css/)
-- [x] Eat some udon.
-- [ ] Eat more udon.
-- [ ] 日本語のサイトも作ること。
+- [x] Eat some udon
+- [ ] Eat more udon
+- [ ] 日本語のサイトも作ること
