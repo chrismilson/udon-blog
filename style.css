@@ -109,3 +109,15 @@ div {
   top: 0;
   width: var(--nav-width);
 }
+
+/* Extra small devices */
+@media screen and (max-width: 600px) {
+  #sidebar-main {
+    display: none;
+  }
+
+  #content-main, .post {
+    margin-right: 0;
+    width: 100%;
+  }
+}
