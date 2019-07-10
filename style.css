@@ -23,7 +23,6 @@ div {
 .container {
   max-width: 50rem;
   margin: auto;
-  overflow: auto;
 }
 
 .en .content {
@@ -35,11 +34,13 @@ div {
 }
 
 .ja .title, .ja .content {
-  font-family: ;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .footer {
   background-color: var(--bgcolor-2);
+  display: flex;
+  flex-direction: row;
   padding: 1em;
   margin-top: 1rem;
   text-align: center;
@@ -49,10 +50,19 @@ div {
 .header {
   background-color: var(--bgcolor-2);
   color: var(--color-4);
+  display: flex;
+  flex-direction: row-reverse;
   font-size: 1.3rem;
+  overflow: auto;
   padding: 2rem;
   text-align: right;
   width: 100%;
+}
+
+.language-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
 }
 
 .nav {
@@ -91,7 +101,11 @@ div {
 .post {
   background: var(--bgcolor-2);
   margin-right: 1rem;
-  padding: 0 1rem;
+  padding: 1rem;
+}
+
+.post:not(:first-child) {
+  margin-top: 1rem;
 }
 
 #mascot {
@@ -110,7 +124,7 @@ div {
   margin-top: 1rem;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 0;
+  top: 1rem;
   width: var(--nav-width);
 }
 
