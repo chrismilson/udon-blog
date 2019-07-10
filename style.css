@@ -2,13 +2,13 @@
   --nav-width: 10rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a:active {
-  color: var(--color-5);
 }
 
 body {
@@ -27,13 +27,11 @@ div {
 }
 
 .content {
-  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
 
 .footer {
   background-color: var(--bgcolor-2);
-  box-sizing: border-box;
   padding: 1em;
   margin-top: 1rem;
   text-align: center;
@@ -42,8 +40,8 @@ div {
 
 .header {
   background-color: var(--bgcolor-2);
-  box-sizing: border-box;
-  color: var(--color-2);
+  color: var(--color-4);
+  font-size: 1.3rem;
   padding: 2rem;
   text-align: right;
   width: 100%;
@@ -65,20 +63,21 @@ div {
 .nav a {
   display: block;
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
 }
 
 .nav a.active {
   background-color: var(--bgcolor-4);
 }
 
-.nav a:hover {
+.nav a:hover:not(.active) {
   background-color: var(--bgcolor-3);
 }
 
 .no-svg .logo {
-  height: 10rem;
   background-image: url(images/icon/icon.png);
   background-repeat: no-repeat;
+  height: 10rem;
 }
 
 .post {
