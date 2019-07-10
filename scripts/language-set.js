@@ -1,0 +1,4 @@
+/*
+  This script will change the content depending on the chosen language.
+  If a language other than english is chosen a cookie will be made.
+*/
