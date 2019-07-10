@@ -4,7 +4,7 @@ var renderPost = (post) => {
       <div class="title">
         <h2>${ post['title'] }</h2>
       </div>
-      <div class="body content">
+      <div class="content">
         ${
           post['body'].map((p) => {
             return '<p>\n' + p + '</p>'
