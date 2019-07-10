@@ -19,7 +19,9 @@ Create an interpreter for text files that will be formatted in such a way that I
 - [ ] Make the skeleton for the website.
   - [ ] Learn HTML.
   - [ ] Learn CSS.
+    - [x] Do the [W3Schools' CSS tutorial](https://www.w3schools.com/css/)
   - [ ] Learn JavaScript.
+    - [x] Do the [W3Schools' JS tutorial](https://www.w3schools.com/css/)
 - [x] Eat some udon.
 - [ ] Eat more udon.
 - [ ] 日本語のサイトも作ること。
