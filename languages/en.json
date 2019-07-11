@@ -1,0 +1,17 @@
+{
+  "serviceName": "English",
+  "language": "en",
+  "nav": [
+    {"title": "Main", "page": "#"},
+    {"title": "About", "page": "#about"},
+    {"title": "Contact", "page": "#contact"}
+  ],
+  "content": {
+    "title": "Sanuki Udon",
+    "subtitle": "by <a href=\"https://shlappas.com\">Chris Milson</a>",
+    "about-message": ["Hi, I'm Chris Milson.",
+      "I am currently living in [Kagawa Prefecture](https://goo.gl/maps/BSpK6o5TYxNYr8Z8A), teaching English to the children that live there.",
+      "I will finish this later."
+    ]
+  }
+}

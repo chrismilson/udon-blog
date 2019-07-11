@@ -1,36 +1,67 @@
-var renderPost = (post) => {
-  return `
-    <div class="container post">
-      <div class="title">
-        <h2>${ post['title'] }</h2>
-      </div>
-      <div class="content">
-        ${
-          post['body'].map((p) => {
-            return '<p>\n' + p + '</p>'
-          }).join('\n')
-        }
-      </div>
-    </div>
-  `;
-};
+/*
+  This script gets at least 5 posts from the folder of posts
+  and renders them on the page.
+*/
 
-[
-  {
-    'title': "Yoshiya Purely Delicious",
-    'body': [
-      'I went to \"Yoshiya Purely Hand Cut Udon\" on Sunday. I ordered the "Large bukkake udon with par-boiled egg" and Chicken Tempura.',
-      'As usual both chopped spring onion and fresh minced ginger were available to put on the udon after I recieved my order at the counter. It would have been nice to have them available where I was eating so that I could top up as I ate instead of stocking up at the beginning.',
-      'The chicken went very well with the Udon. I dipped the chicken in the soup and the mixture of runny yolk and salty broth was very nice.'
-    ],
-  },
-  // {
-  //   'title': 'Bing Bang Boom',
-  //   'body': [
-  //     'Did I ever tell you the tragedy of Darth Plagueis the wise?',
-  //     'It\'s not a story the Jedi would tell.'
-  //   ]
-  // },
-].forEach(post => {
-  document.write(renderPost(post));
-});
+var populateContent = (function() {
+  var posts = [];
+
+  var renderPost = function(post, lang) {
+    if (!lang) {
+      return;
+    }
+
+    return `
+      <div class="container post">
+        <div class="title">
+          <h2>${ post[lang.language].title }</h2>
+        </div>
+        <div class="content">
+          ${
+            post[lang.language].body.map((p) => {
+              return '<p>\n' + p + '</p>'
+            }).join('\n')
+          }
+        </div>
+      </div>
+    `;
+  };
+
+  if (window.XMLHttpRequest) var request = new XMLHttpRequest();
+  else var request = new ActiveXObject('Microsoft.XMLHTTP');
+
+  request.open('GET', 'posts/');
+  request.send();
+
+  request.onreadystatechange = function() {
+    if (request.readyState === 4) {
+      // request.responseText is a folder listing
+      // we will find the lisings with regex and do a request for them.
+      var regex = /href="(.*?)"/g;
+
+      var postFiles = request.responseText.match(/href=".*?"/g).map(e => {
+        return /"((.*?).json)"/.exec(e).slice(1); // cut off full matched string
+      });
+
+      postFiles.forEach(fileName => {
+        if (window.XMLHttpRequest) var postRequest = new XMLHttpRequest();
+        else var postRequest = new ActiveXObject('Microsoft.XMLHTTP');
+
+        postRequest.open("GET", 'posts/' + fileName[0]);
+        postRequest.send();
+
+        postRequest.onreadystatechange = function() {
+          if (postRequest.readyState === 4) {
+            posts.push(JSON.parse(postRequest.responseText));
+          }
+        }
+      });
+    }
+  }
+
+  return function(lang) {
+    document.getElementById("content-main").innerHTML = posts.map(p => {
+      return renderPost(p, lang);
+    }).join('');
+  };
+})();
