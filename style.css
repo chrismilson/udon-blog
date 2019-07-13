@@ -21,6 +21,10 @@ div {
   margin: auto;
 }
 
+.aWrap {
+  display: inline-block;
+}
+
 .container {
   margin: auto;
   max-width: 50rem;
