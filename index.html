@@ -15,10 +15,9 @@
 
     <!-- Scripts -->
     <script src="scripts/populate-content.js"></script>
-    <script src="scripts/components.js"></script>
     <script src="scripts/language.js"></script>
   </head>
-  <body class="en">
+  <body>
     <div class="container">
         <div class="container header">
           <div class="logo">
@@ -28,8 +27,13 @@
             </object>
           </div>
           <div class="container">
-            <h1 class="title">Sanuki Udon</h1>
-            <h4 class="title">by <a class="my-name" href="https://shlappas.com">Chris Milson</a></h4>
+            <h1 class="title">
+              <span lang="en">Sanuki Udon</span>
+              <span lang="ja">讃岐うどん</span>
+            </h1>
+            <h4 class="title">
+              <span lang="en">by <a class="my-name" href="https://shlappas.com">Chris Milson</a></span>
+            </h4>
           </div>
         </div>
 
@@ -37,9 +41,18 @@
         <div class="container nav content" id="sidebar-main">
           <!-- Default nav -->
           <ul>
-            <li><a href="#">Udon</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">
+              <span lang="en">Main</span>
+              <span lang="ja">ホーム</span>
+            </a></li>
+            <li><a href="#about">
+              <span lang="en">About</span>
+              <span lang="ja">自己紹介</span>
+            </a></li>
+            <li><a href="#contact">
+              <span lang="en">Contact</span>
+              <span lang="ja">連絡先</span>
+            </a></li>
           </ul>
         </div>
 
@@ -51,14 +64,22 @@
         <div class="container footer content">
           <!-- Default footer -->
           <div class="license content">
-            <p>
+            <p style="font-family: 'Roboto', sans-serif;">
               &copy; Chris Milson 2019
             </p>
           </div>
           <div class="language-menu content">
             <ul>
-              <li>English</li>
-              <li>日本語</li>
+              <li style="font-family: 'Roboto', sans-serif;">
+                <span class="link" onclick="setLanguage('en')">
+                  English
+                </span>
+              </li>
+              <li style="font-family: 'Noto Sans JP', sans-serif;">
+                <span class="link" onclick="setLanguage('ja')">
+                  日本語
+                </span>
+              </li>
             </ul>
           </div>
         </div>
