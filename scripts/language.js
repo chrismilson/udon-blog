@@ -22,22 +22,16 @@ First loads all the language files on hand and then stores them in memory.
 It also controls the language-menu elements on the page.
 */
 
-var setLanguage = (function () {
-  return function(langCode) {
-    var hideAll = document.querySelectorAll('[lang]');
-    for (var i = 0; i < hideAll.length; i++) {
-      hideAll[i].style.display = 'none';
-    }
-
-    var show = document.querySelectorAll('[lang=' + langCode + ']');
-    for (var i = 0; i < show.length; i++) {
-      show[i].style.display = 'inherit';
-    }
-
-    document.cookie = 'lang=' + langCode + ';max-age=' + 60 * 60 * 24 * 365;
+var setLanguage = function(langCode) {
+  var hideAll = document.querySelectorAll('[lang]');
+  for (var i = 0; i < hideAll.length; i++) {
+    hideAll[i].style.display = 'none';
   }
-})();
 
-onload = function () {
-  setLanguage(getLanguage());
+  var show = document.querySelectorAll('[lang=' + langCode + ']');
+  for (var i = 0; i < show.length; i++) {
+    show[i].style.display = 'inherit';
+  }
+
+  document.cookie = 'lang=' + langCode + ';max-age=' + 60 * 60 * 24 * 365;
 };

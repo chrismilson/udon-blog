@@ -62,6 +62,11 @@ div {
   cursor: pointer;
 }
 
+.main {
+  margin-top: 1rem;
+  margin-right: var(--nav-width);
+}
+
 .nav {
   background-color: var(--bgcolor-2);
   font-family: 'Roboto', sans-serif;
@@ -75,17 +80,17 @@ div {
   padding: 0;
 }
 
-.nav a {
+.nav span.link {
   display: block;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s;
 }
 
-.nav a.active {
+.nav span.link.active {
   background-color: var(--bgcolor-4);
 }
 
-.nav a:hover:not(.active) {
+.nav span.link:hover:not(.active) {
   background-color: var(--bgcolor-3);
 }
 
@@ -105,15 +110,18 @@ div {
   margin-top: 1rem;
 }
 
+#about-me {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
 #mascot {
   float: right;
   height: 10rem;
   position: relative;
-}
-
-#content-main {
-  margin-top: 1rem;
-  margin-right: var(--nav-width);
 }
 
 #sidebar-main {
