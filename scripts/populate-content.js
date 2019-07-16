@@ -4,6 +4,10 @@
 */
 
 var populateContent = (function() {
+  var postNames = [
+    '2019-7-15',
+    '2019-7-7'
+  ];
   var posts = [];
 
   var renderPost = function(post) {
@@ -31,19 +35,21 @@ var populateContent = (function() {
     `;
   };
 
-  if (window.XMLHttpRequest) var request = new XMLHttpRequest();
-  else var request = new ActiveXObject('Microsoft.XMLHTTP');
+  postNames.forEach(post => {
+    if (window.XMLHttpRequest) var request = new XMLHttpRequest();
+    else var request = new ActiveXObject('Microsoft.XMLHTTP');
 
-  request.open('GET', 'posts/2019-7-7.json');
-  request.send();
+    request.open('GET', 'posts/' + post + '.json');
+    request.send();
 
-  request.onreadystatechange = function() {
-    if (request.readyState == 4) {
-      var post = JSON.parse(request.responseText);
-      posts.push(renderPost(post))
-      populateContent();
-    }
-  };
+    request.onreadystatechange = function() {
+      if (request.readyState == 4) {
+        var post = JSON.parse(request.responseText);
+        posts.push(renderPost(post))
+        populateContent();
+      }
+    };
+  });
 
   return function() {
     document.getElementById("content-main").innerHTML = posts.join('');
