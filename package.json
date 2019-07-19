@@ -4,8 +4,8 @@
   "description": "A blog collecting my experiences eating udon in Japan.",
   "main": "app.js",
   "scripts": {
-    "nmstart": "nodemon ./bin/www",
-    "start": "node app.js",
+    "nmstart": "nodemon ./www",
+    "start": "node ./www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
