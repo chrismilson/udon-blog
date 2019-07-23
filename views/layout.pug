@@ -1,7 +1,30 @@
 doctype html
-html
+html(lang='en', dir='ltr')
   head
+    meta(charset='utf-8')
     title= title
+    link(rel='stylesheet', href='/stylesheets/colors.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    .container
+      .container.header
+        .logo#mascot
+          object(type='image/svg+xml', data='images/icon/icon.svg') Chicken Mascot
+        .container.title
+          h1= title
+      
+      .container.nav#sidebar-main
+        ul
+          each link in nav
+            li
+              a(href=link.href)= link.name
+          
+      block content
+      
+      .footer
+        .lisence
+          p &copy; Chris Milson 2019
+        .language-menu
+          ul
+            each lang in langs
+              li(onclick=`setLang(${lang.abbr})`)= lang.serviceName

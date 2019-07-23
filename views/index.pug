@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container.main#content-main
+    .post
+      .title
+        h1= title
+      .content Welcome to #{title}

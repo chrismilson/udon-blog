@@ -1,0 +1,30 @@
+:root {
+  /* Main colours */
+  --bgcolor-1: #1D8A8FFF;
+  --bgcolor-2: #5DB5B9FF;
+  --bgcolor-3: #35969AFF;
+  --bgcolor-4: #0A7479FF;
+  --bgcolor-5: #015C60FF;
+
+  /* Complementary colours */
+  --cplcolor-1: #F2801DFF;
+  --cplcolor-2: #FFB474FF;
+  --cplcolor-3: #FE9E4BFF;
+  --cplcolor-4: #C55F07FF;
+  --cplcolor-5: #9C4800FF;
+
+  /* Dark text colours */
+  --color-1: #000000FF;
+  --color-2: #001014FF;
+  --color-3: #00292DFF;
+  --color-4: #004347FF;
+
+  /* Light text colours */
+  --color-1-light: #E6FFFFFF;
+  --color-2-light: #CDFFFFFF;
+  --color-3-light: #B4FFFFFF;
+  --color-4-light: #9AF5F9FF;
+
+  /* Control color of mascot from here */
+  --mascot-color: var(--color-4);
+}
